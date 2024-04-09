@@ -2,10 +2,6 @@ html {
     box-sizing: border-box; /*no añade tamaño (ej px) al width o height con ej el padding o el border*/
 }
 
-/* *, *::before, *::after {
-    box-sizing: inherit; /* le coloca a todos el box-sizing: border-box
-    } */
-
 body {
     display: flex;    
     justify-content: center; 
@@ -15,6 +11,7 @@ body {
 h2 {
     font-size: 250%;   
 }
+
 p {
     font-weight: bold;
 }
@@ -38,12 +35,13 @@ p {
  border: 20px solid;
  padding: 10px;
  justify-content: space-around; 
+ margin-top: 20px;
 }
 
 .caja_red {
-    background-color: rgb(236, 58, 31);
+    background-color: rgb(221, 72, 50);
     width: 100%;    
-    height: 60px;
+    height: 40px;
     line-height: center;    
     margin: 10px;
 }
@@ -89,7 +87,7 @@ padding: 10px;
     flex-direction: column;
     flex: 3;  /*ocupa el 60% del ancho disponible*/
     background-color: rgb(75, 68, 114);
-    margin-top: 10px;
+    margin-top: 20px;
     border: 20px solid; 
     padding: 10px;
     justify-content: space-between; 
@@ -119,16 +117,16 @@ padding: 10px;
     margin-top: 25px;   
 }
 
-.contenido_right_global {
-    width: 20%;
+.contenido_right_global {    
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 0.5;
     background-color: rgb(209, 90, 90);
-    margin-top: 10px;    
-    margin-top: 10px;
+    margin-top: 20px;   
     border: 20px solid;  
-    border-left: none;    
+    border-left: none;  
+    padding-right: 20px;    
+    align-items: center; /* Centra verticalmente */ 
 }
 
 .contenido_right {
@@ -139,22 +137,20 @@ padding: 10px;
     flex-direction: column;
 }
 
-
 .publicidad {
     background-color: rgb(241, 241, 112);
-    width: 47%;            
+    width: 100%;            
     height: 40px;    
     margin: 10px;       
-    gap: 2px; 
+   
 }
 
 .caja_pie {
     background-color: rgb(228, 233, 144);
     border: 20px solid;   
-    margin-top: 10px;    
+    margin-top: 20px;    
     height: 40px;
     align-content: start;
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;    
 }
 
