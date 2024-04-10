@@ -138,3 +138,30 @@ padding: 10px;
     align-items: center; 
 }
 
+@media (max-width: 768px) {
+    body {
+        background-color: brown;    
+    }    
+    .header {
+        flex-direction: column;
+       }    
+    .nav, .social, .logo  { 
+        width: 95%; /*ancho de columna roja central*/   
+        /* flex-basis: calc(100%-20px); */
+    }     
+    .contenido_global {
+        display: block;     
+    }
+
+    .contenido_right_global { 
+        margin-top: 0px;          
+        border: 20px solid;
+        border-top: none;                   
+    }     
+
+    .navegacion {
+        width: 95%;
+    }
+    
+    }
+
